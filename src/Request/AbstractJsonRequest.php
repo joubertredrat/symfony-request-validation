@@ -83,13 +83,13 @@ abstract class AbstractJsonRequest
         return [self::FORMAT_JSON];
     }
 
-    private static function camelCase(string $field): string
+    private static function camelCase(string $attribute): string
     {
-        return (new Convert($field))->toCamel();
+        return (new Convert($attribute))->toCamel();
     }
 
-    private static function snakeCase(string $field): string
+    private static function snakeCase(string $attribute): string
     {
-        return (new Convert($field))->toSnake();
+        return (new Convert($attribute))->toSnake();
     }
 }
