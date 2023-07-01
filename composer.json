@@ -8,11 +8,13 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "fig/http-message-util": "^1.1",
+        "jawira/case-converter": "^3.5",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
+        "symfony/validator": "6.3.*",
         "symfony/yaml": "6.3.*"
     },
     "config": {
