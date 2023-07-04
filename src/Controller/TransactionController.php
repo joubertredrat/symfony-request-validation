@@ -25,8 +25,8 @@ class TransactionController extends AbstractController
         return $this->json([
             'resonse' => 'ok',
             'datetime' => (new DateTimeImmutable('now'))->format('Y-m-d H:i:s'),
-            'first_name' => $createTransaction->firstName,
-            'last_name' => $createTransaction->lastName,
+            'firstName' => $createTransaction->firstName,
+            'lastName' => $createTransaction->lastName,
             'amount' => $createTransaction->amount,
             'installments' => $createTransaction->installments,
             'description' => $createTransaction->description,
