@@ -12,8 +12,6 @@ use Symfony\Component\Validator\Constraints\Type;
 
 class CreateTransactionRequest extends AbstractJsonRequest
 {
-    const CURRENCY_BRL = 'R$';
-
     #[NotBlank(message: 'I dont like this field empty')]
     #[Type('string')]
     public readonly string $firstName;
@@ -42,22 +40,4 @@ class CreateTransactionRequest extends AbstractJsonRequest
 
     #[Type('string')]
     public ?string $description = null;
-
-    public function getFullName(): string
-    {
-        return \sprintf('%s %s', $this->firstName, $this->lastName);
-    }
-
-    public function getAmountBRL(): string
-    {
-        if ($this->amount < 100) {
-            return \sprintf('%s 0,%d', self::CURRENCY_BRL, $this->amount);
-        }
-
-        return \sprintf(
-            '%s %s', 
-            self::CURRENCY_BRL, 
-            \number_format($this->amount / 100, 2, ',', '.'),
-        );
-    }
 }
