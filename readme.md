@@ -11,7 +11,7 @@ PHP 8.2 or Docker with compose.
 * With PHP: Install dependencies with `composer install` and after execute `php -S 0.0.0.0:8001 -t public/`.
 * With Docker: Just run `docker composer up -d`.
 
-:brazil: Este repositório é parte do post [foo bar](https://redrat.com.br).
+:brazil: Este repositório é parte do post [Validando requests no Symfony Framework](https://dev.to/joubertredrat/validando-requests-no-symfony-framework-4fi7).
 
 ### Dependências
 
