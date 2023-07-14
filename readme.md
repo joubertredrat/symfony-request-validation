@@ -1,4 +1,4 @@
-# Symfony Request Validator
+# Symfony Request Validation
 
 :us: This repository is a part of article [foo bar](https://redrat.com.br).
 
