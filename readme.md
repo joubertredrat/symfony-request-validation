@@ -1,6 +1,6 @@
 # Symfony Request Validation
 
-:us: This repository is a part of article [foo bar](https://redrat.com.br).
+:us: This repository is a part of article [Validating requests on Symfony Framework]([https://redrat.com.br](https://dev.to/joubertredrat/validating-requests-on-symfony-framework-3m32)).
 
 ### Dependencies
 
